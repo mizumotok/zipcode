@@ -1,0 +1,9 @@
+{
+  "name": "zipcode",
+  "description": "Japan Postal Code Web API",
+  "version": "1.0.0",
+  "author": "mizumotok",
+  "keywords": ["zip code", "postal code"],
+  "license": "MIT",
+  "repository": "github:mizumotok/zipcode"
+}
