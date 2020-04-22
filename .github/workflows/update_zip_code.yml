@@ -1,0 +1,26 @@
+name: update ZIP Code
+on:
+  schedule:
+    - cron: '33 * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: yarn install
+    - name: Update ZIP Code
+      run: yarn main
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add ./docs/api/
+        git commit -m "Update data `date +%Y-%m-%d`" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
