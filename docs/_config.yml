@@ -1,0 +1,13 @@
+theme: jekyll-theme-cayman
+title: 郵便番号検索API
+description: 郵便番号から住所を返すAPI（JSON）
+lang: ja
+twitter:
+  username: mizumotok
+social:
+  name: Kiyoshi Mizumoto
+  links:
+    - https://twitter.com/mizumotok
+    - https://github.com/mizumotok
+google_analytics: UA-50891312-11
+
