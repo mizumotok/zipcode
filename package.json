@@ -30,7 +30,7 @@
     "glob": "^7.1.6",
     "graceful-fs": "^4.2.3",
     "iconv-lite": "^0.5.1",
-    "jszip": "^3.4.0",
+    "jszip": "^3.8.0",
     "node-fetch": "^2.6.1"
   }
 }
